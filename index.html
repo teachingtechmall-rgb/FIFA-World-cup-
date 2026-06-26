@@ -14,7 +14,7 @@
   <meta name="author" content="FWLive"/>
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
   <meta name="googlebot" content="index, follow"/>
-  <link rel="canonical" href="https://fwlive.vercel.app/Index.html"/>
+  <link rel="canonical" href="https://fwlive.vercel.app/"/>
 
   <!-- ═══════════════════════════════════════
        OPEN GRAPH — Facebook / WhatsApp Preview
@@ -27,7 +27,7 @@
   <meta property="og:image:width" content="1280"/>
   <meta property="og:image:height" content="720"/>
   <meta property="og:image:alt" content="Watch FIFA World Cup 2026 For Free — India Pakistan USA Guide"/>
-  <meta property="og:url" content="https://fwlive.vercel.app/Index.html"/>
+  <meta property="og:url" content="https://fwlive.vercel.app/"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="article:published_time" content="2026-06-11T00:00:00+00:00"/>
   <meta property="article:modified_time" content="2026-06-26T00:00:00+00:00"/>
@@ -265,14 +265,39 @@
       max-width: 600px;
       margin: 0 auto;
     }
-       .container,
-.toc,
-section {
-    max-width: 860px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+    .container { max-width: 860px; margin: 0 auto; padding: 0 16px; box-sizing: border-box; }
+    body { overflow-x: hidden; }
+
+    /* ── MODAL SYSTEM ── */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.88); z-index: 9999;
+      padding: 16px; overflow-y: auto;
+    }
+    .modal-overlay.active { display: flex; align-items: flex-start; justify-content: center; }
+    .modal-box {
+      background: #0d1b3e; border: 1px solid #1a3a6b;
+      border-radius: 14px; padding: 28px 22px;
+      max-width: 680px; width: 100%; margin: 30px auto; position: relative;
+    }
+    .modal-box h2 { color: #ffd600; font-size: 20px; margin-bottom: 14px; border-left: 4px solid #ffd600; padding-left: 12px; }
+    .modal-box h3 { color: #90caf9; font-size: 15px; margin: 18px 0 8px; }
+    .modal-box p, .modal-box li { color: #cfd8dc; font-size: 13px; line-height: 1.75; margin-bottom: 10px; }
+    .modal-box ul { padding-left: 18px; }
+    .modal-close {
+      position: absolute; top: 12px; right: 14px;
+      background: #e53935; color: #fff; border: none;
+      width: 30px; height: 30px; border-radius: 50%;
+      font-size: 16px; font-weight: 900; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 18px 0 8px; }
+    .footer-links button {
+      background: none; border: 1px solid #1a3a6b; color: #90caf9;
+      font-size: 12px; padding: 5px 14px; border-radius: 20px;
+      cursor: pointer; transition: all 0.2s; font-family: inherit;
+    }
+    .footer-links button:hover { border-color: #ffd600; color: #ffd600; }
 
     /* TOC */
     .toc {
@@ -398,6 +423,8 @@ section {
 
     @media (max-width: 600px) {
       .cards { grid-template-columns: 1fr 1fr; }
+      table { font-size: 12px; }
+      th, td { padding: 8px 10px; }
     }
 
     /* Monetization Buttons */
@@ -440,8 +467,8 @@ section {
     }
     .ad-banner p { color: #fff; font-size: 15px; font-weight: 700; margin-bottom: 12px; }
     .ad-banner span { color: #ffd600; }
-
-    @media (max-width: 768px) {
+ 
+  @media (max-width: 768px) {
     .container,
     .toc,
     section {
@@ -452,7 +479,7 @@ section {
     body {
         overflow-x: hidden;
     }
-}
+  }
   </style>
 </head>
 <body>
@@ -922,38 +949,181 @@ section {
 <footer>
   <div class="container">
 
-    <!-- Internal Links -->
-    <div style="background:#0d1b3e;border:1px solid #1a3a6b;border-radius:10px;padding:24px;margin-bottom:30px;text-align:left;">
-      <h3 style="color:#ffd600;font-size:15px;margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;">📌 Jump To Section</h3>
-      <div style="display:flex;flex-wrap:wrap;gap:10px;">
-        <a href="#india" style="background:#1a3a6b;color:#90caf9;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">🇮🇳 India Guide</a>
-        <a href="#pakistan" style="background:#1a3a6b;color:#90caf9;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">🇵🇰 Pakistan Guide</a>
-        <a href="#usa" style="background:#1a3a6b;color:#90caf9;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">🇺🇸 USA Guide</a>
-        <a href="#youtube" style="background:#1a3a6b;color:#90caf9;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">▶ YouTube Free</a>
-        <a href="#apk" style="background:#1a3a6b;color:#90caf9;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">📲 Free APK</a>
-        <a href="#vpn" style="background:#1a3a6b;color:#90caf9;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">🔐 VPN Trick</a>
-        <a href="#faq" style="background:#1a3a6b;color:#90caf9;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:13px;">❓ FAQ</a>
+    <!-- Jump To Section -->
+    <div style="background:#0d1b3e;border:1px solid #1a3a6b;border-radius:10px;padding:20px;margin-bottom:24px;text-align:left;">
+      <h3 style="color:#ffd600;font-size:14px;margin-bottom:12px;text-transform:uppercase;letter-spacing:1px;">📌 Jump To Section</h3>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;">
+        <a href="#india" style="background:#1a3a6b;color:#90caf9;padding:5px 12px;border-radius:20px;text-decoration:none;font-size:12px;">🇮🇳 India</a>
+        <a href="#pakistan" style="background:#1a3a6b;color:#90caf9;padding:5px 12px;border-radius:20px;text-decoration:none;font-size:12px;">🇵🇰 Pakistan</a>
+        <a href="#usa" style="background:#1a3a6b;color:#90caf9;padding:5px 12px;border-radius:20px;text-decoration:none;font-size:12px;">🇺🇸 USA</a>
+        <a href="#youtube" style="background:#1a3a6b;color:#90caf9;padding:5px 12px;border-radius:20px;text-decoration:none;font-size:12px;">▶ YouTube</a>
+        <a href="#apk" style="background:#1a3a6b;color:#90caf9;padding:5px 12px;border-radius:20px;text-decoration:none;font-size:12px;">📲 APK</a>
+        <a href="#vpn" style="background:#1a3a6b;color:#90caf9;padding:5px 12px;border-radius:20px;text-decoration:none;font-size:12px;">🔐 VPN</a>
+        <a href="#faq" style="background:#1a3a6b;color:#90caf9;padding:5px 12px;border-radius:20px;text-decoration:none;font-size:12px;">❓ FAQ</a>
       </div>
     </div>
 
     <!-- Final CTA -->
-    <a href="https://omg10.com/4/11009663" target="_blank" rel="noopener" class="watch-btn yellow" style="max-width:500px;margin:0 auto 28px;display:block;">
+    <a href="https://omg10.com/4/11009663" target="_blank" rel="noopener" class="watch-btn yellow" style="max-width:480px;margin:0 auto 24px;display:block;">
       ⚽ World Cup FREE Streaming Guide ▶
     </a>
 
-    <p style="color:#546e7a;font-size:13px;">📅 Last updated: <strong style="color:#90a4ae;">June 26, 2026</strong> | Info subject to change by official broadcasters.</p>
-    <p style="margin-top:8px;font-size:12px;color:#37474f;">
+    <!-- Legal Pages Buttons -->
+    <div class="footer-links">
+      <button onclick="openModal('privacy')">🔒 Privacy Policy</button>
+      <button onclick="openModal('disclaimer')">⚠️ Disclaimer</button>
+      <button onclick="openModal('about')">ℹ️ About Us</button>
+      <button onclick="openModal('contact')">📧 Contact</button>
+      <button onclick="openModal('dmca')">📋 DMCA</button>
+    </div>
+
+    <p style="color:#546e7a;font-size:12px;margin-top:14px;">📅 Last updated: <strong style="color:#90a4ae;">June 26, 2026</strong> | Info subject to change by official broadcasters.</p>
+    <p style="margin-top:6px;font-size:11px;color:#37474f;">
       <a href="https://www.fifa.com" target="_blank" rel="noopener" style="color:#ffd600;">FIFA.com</a>
       &nbsp;|&nbsp;
       <a href="#overview" style="color:#ffd600;">Back to Top ↑</a>
       &nbsp;|&nbsp;
-      <a href="https://fwlive.vercel.app" style="color:#37474f;">FWLive Home</a> › FIFA World Cup 2026 Free Streaming Guide
+      <span style="color:#37474f;">© 2026 FWLive. All rights reserved.</span>
     </p>
   </div>
 </footer>
 
-<!-- ═══ FLOATING SOCIAL SHARE — Off-Page SEO signals ═══ -->
-<div style="position:fixed;bottom:20px;right:16px;z-index:999;display:flex;flex-direction:column;gap:8px;">
+<!-- ═══════════════════════════════════════
+     MODALS — Privacy Policy, Disclaimer, About, Contact, DMCA
+═══════════════════════════════════════ -->
+
+<!-- PRIVACY POLICY -->
+<div class="modal-overlay" id="modal-privacy">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('privacy')">✕</button>
+    <h2>🔒 Privacy Policy</h2>
+    <p><strong>Last Updated:</strong> June 26, 2026 &nbsp;|&nbsp; <strong>Website:</strong> fwlive.vercel.app</p>
+
+    <h3>1. Information We Collect</h3>
+    <p>FWLive does not collect any personal information directly. We do not require registration, login, or any personal data to use this website. Third-party ad networks (Adsterra, Monetag) may collect anonymous usage data as per their own privacy policies.</p>
+
+    <h3>2. Cookies</h3>
+    <p>This website may use cookies through third-party advertising partners for the purpose of serving relevant advertisements. You can disable cookies in your browser settings at any time without affecting your ability to use this website.</p>
+
+    <h3>3. Third-Party Links</h3>
+    <p>This website contains links to third-party streaming platforms (JioTV, ZEE5, Tubi, PTV Sports, Tapmad, FOX, BBC iPlayer, etc.). We are not responsible for the privacy practices or content of these external websites.</p>
+
+    <h3>4. Advertising</h3>
+    <p>We use third-party advertising networks to monetize this website. These networks may use cookies and web beacons to display personalized ads. Their privacy policies apply to their data collection practices.</p>
+
+    <h3>5. Children's Privacy</h3>
+    <p>This website is not directed at children under 13. We do not knowingly collect data from minors.</p>
+
+    <h3>6. Contact</h3>
+    <p>For privacy-related queries, contact us at: <strong>fwlive.info@gmail.com</strong></p>
+  </div>
+</div>
+
+<!-- DISCLAIMER -->
+<div class="modal-overlay" id="modal-disclaimer">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('disclaimer')">✕</button>
+    <h2>⚠️ Disclaimer</h2>
+    <p><strong>Last Updated:</strong> June 26, 2026</p>
+
+    <h3>General Information Only</h3>
+    <p>The content on FWLive (fwlive.vercel.app) is provided for general informational purposes only. All streaming availability information is based on research at the time of publication and may change without notice.</p>
+
+    <h3>No Affiliation</h3>
+    <p>FWLive is NOT affiliated with, endorsed by, or officially connected to FIFA, JioTV, ZEE5, PTV Sports, Tapmad, Tubi, FOX Sports, BBC iPlayer, or any other streaming platform mentioned on this site. All trademarks belong to their respective owners.</p>
+
+    <h3>Streaming Availability</h3>
+    <p>Streaming rights, availability, and pricing can change at any time. We recommend verifying current availability directly on the official platform websites before making any purchasing decisions.</p>
+
+    <h3>Third-Party Links</h3>
+    <p>We link to third-party websites and services for your convenience. We do not control these sites and are not responsible for their content, availability, or any losses arising from their use.</p>
+
+    <h3>No Legal or Financial Advice</h3>
+    <p>Nothing on this website constitutes legal, financial, or professional advice. Use the information at your own risk.</p>
+  </div>
+</div>
+
+<!-- ABOUT US -->
+<div class="modal-overlay" id="modal-about">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('about')">✕</button>
+    <h2>ℹ️ About FWLive</h2>
+
+    <p><strong>FWLive</strong> is a free sports streaming guide website dedicated to helping football fans around the world find the best legal ways to watch live matches — especially FIFA World Cup 2026.</p>
+
+    <h3>🎯 Our Mission</h3>
+    <p>We believe every football fan deserves to watch the beautiful game — regardless of their budget. Our mission is to provide clear, accurate, and up-to-date guides on free and affordable streaming options across India, Pakistan, USA, and worldwide.</p>
+
+    <h3>📋 What We Cover</h3>
+    <ul>
+      <li>Free streaming apps and websites by country</li>
+      <li>Legal APK guides for Android & iOS</li>
+      <li>VPN methods to access geo-blocked content</li>
+      <li>Match schedules and broadcast information</li>
+      <li>Platform comparisons and recommendations</li>
+    </ul>
+
+    <h3>🌍 Who We Serve</h3>
+    <p>Our primary audience is football fans in India, Pakistan, and the USA — but our guides are useful for viewers in any country looking for free or low-cost World Cup streaming options.</p>
+
+    <h3>📧 Get In Touch</h3>
+    <p>Email: <strong>fwlive.info@gmail.com</strong></p>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="modal-overlay" id="modal-contact">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('contact')">✕</button>
+    <h2>📧 Contact Us</h2>
+
+    <p>We'd love to hear from you! Whether you have a question, found incorrect information, or want to suggest a streaming platform we've missed — reach out anytime.</p>
+
+    <h3>📩 Email</h3>
+    <p><strong>fwlive.info@gmail.com</strong></p>
+    <p>We typically respond within 24–48 hours.</p>
+
+    <h3>🐞 Report an Error</h3>
+    <p>Found outdated or incorrect streaming information? Please email us with the subject line <strong>"Error Report"</strong> and we'll update the guide as soon as possible.</p>
+
+    <h3>💡 Suggest a Platform</h3>
+    <p>Know of a free streaming option we haven't covered? Send us the details with subject line <strong>"Streaming Suggestion"</strong> and we'll verify and add it!</p>
+
+    <h3>📢 Advertising & Partnerships</h3>
+    <p>For advertising inquiries, contact us at <strong>fwlive.info@gmail.com</strong> with subject line <strong>"Advertising"</strong>.</p>
+  </div>
+</div>
+
+<!-- DMCA -->
+<div class="modal-overlay" id="modal-dmca">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('dmca')">✕</button>
+    <h2>📋 DMCA Policy</h2>
+    <p><strong>Last Updated:</strong> June 26, 2026</p>
+
+    <h3>Copyright Notice</h3>
+    <p>FWLive respects the intellectual property rights of others. This website does not host, stream, or distribute any copyrighted content. We only provide informational guides linking to official, legal streaming platforms.</p>
+
+    <h3>DMCA Takedown Requests</h3>
+    <p>If you believe any content on this website infringes your copyright, please send a written notice to:</p>
+    <p><strong>Email:</strong> fwlive.info@gmail.com<br/>
+    <strong>Subject:</strong> DMCA Takedown Request</p>
+
+    <h3>Your Notice Must Include</h3>
+    <ul>
+      <li>Your name and contact information</li>
+      <li>Description of the copyrighted work</li>
+      <li>URL of the allegedly infringing content</li>
+      <li>A statement of good faith belief</li>
+      <li>Your electronic or physical signature</li>
+    </ul>
+
+    <p>We will respond to valid DMCA notices within 72 hours and remove infringing content promptly.</p>
+  </div>
+</div>
+
+<!-- ═══ FLOATING SHARE BUTTONS ═══ -->
+<div style="position:fixed;bottom:20px;right:16px;z-index:998;display:flex;flex-direction:column;gap:8px;">
   <a href="https://wa.me/?text=Watch%20FIFA%20World%20Cup%202026%20FREE%20%F0%9F%8F%86%20https://fwlive.vercel.app/Index.html"
      target="_blank" rel="noopener"
      style="background:#25d366;color:#fff;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:22px;box-shadow:0 3px 14px rgba(0,0,0,0.4);"
@@ -966,6 +1136,36 @@ section {
      style="background:#ffd600;color:#000;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:20px;font-weight:900;box-shadow:0 3px 14px rgba(0,0,0,0.4);"
      title="Back to Top">↑</a>
 </div>
+
+<!-- ═══ MODAL JAVASCRIPT ═══ -->
+<script>
+  function openModal(id) {
+    document.getElementById('modal-' + id).classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(id) {
+    document.getElementById('modal-' + id).classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  // Close modal on overlay click
+  document.querySelectorAll('.modal-overlay').forEach(function(overlay) {
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  });
+  // Close on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal-overlay.active').forEach(function(m) {
+        m.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    }
+  });
+</script>
 
 </body>
 </html>
