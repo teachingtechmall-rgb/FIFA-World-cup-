@@ -2,7 +2,7 @@
 <html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=0.80"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
   <!-- ═══════════════════════════════════════
@@ -440,6 +440,19 @@ section {
     }
     .ad-banner p { color: #fff; font-size: 15px; font-weight: 700; margin-bottom: 12px; }
     .ad-banner span { color: #ffd600; }
+
+    @media (max-width: 768px) {
+    .container,
+    .toc,
+    section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
   </style>
 </head>
 <body>
